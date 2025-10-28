@@ -39,7 +39,7 @@ namespace ACPP.API.Managers.Implementations
                 HttpClient client = _httpClientFactory.CreateClient();
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, listItemsUrl);
                 request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-                HttpResponseMessage response = await client.SendAsync(request);
+                HttpResponseMessage response = await client.SendAsync(request); // CodeQL [SM03781] no user input used in request
                 if (response.IsSuccessStatusCode)
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
