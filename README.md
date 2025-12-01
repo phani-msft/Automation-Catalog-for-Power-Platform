@@ -2,7 +2,7 @@
  Licensed under the MIT License. -->
  
 # Self-hosting Automation Catalog documentation (eng)
-## Configuring Power Catalog (eng)
+## Configuring Power Catalog (eng) 
 
 Follow the steps mentioned here to set up and administer a Power Catalog: [Administer the catalog - Power Platform | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/admin/administer-catalog#set-up-the-catalog)
 
